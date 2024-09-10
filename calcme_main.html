@@ -25,37 +25,57 @@
 
 <body>
   <!-- header ---------------------------------------------------------->
-  <p>Порахуй мене. v0.0... </p>
-  <p>Версія: 0.2 </p>
+  <p>Порахуй мене. Версія: 0.4 </p> 
+
   <br>
-  <br>
-  <label for="iterationsLabel">Ітерацій (між 5..99)....:</label>
+  <label for="iterations_Label">Кількість обчислень:</label>
+  <Button id="decreaseIteration_Button" onclick="decreaseIteration()">-</Button>
   <input type="number" id="iterations" name="iterations" min="5" max="99">
+  <Button id="increaseIteration_Button" onclick="increaseIteration()">+</Button>
+  <span style="color: #999999;">(у діапазоні від 5 до 99)</span>
+  
   <br>
+  <label for="maxPossibleTotal_Label">Сума не більше:</label>
+  <Button id="decreaseMaxPossibleTotal_Button" onclick="decreaseMaxPossibleTotal()">-</Button>
+  <input type="number" id="maxPossibleTotalValue" name="maxPossibleTotalValue" min="10" max="200">
+  <Button id="increaseMaxPossibleTotal_Button" onclick="increaseMaxPossibleTotal()">+</Button>
+  <span style="color: #999999;">(у діапазоні від 10 до 200)</span>
+  
   <br>
-  <label for="minValueLabel">Числа починаючи з (між 1..30)....:</label>
+  <label for="minValue_Label">Числа починаючи з:</label>
+  <Button id="decreaseIteration_Button" onclick="decreaseIteration()">-</Button>
   <input type="number" id="minValue" name="minValue" min="1" max="30">
-  <label for="maxValueLabel">по (між 9..99)....:</label>
+  <Button id="increaseIteration_Button" onclick="increaseIteration()">+</Button>
+  <span style="color: #999999;">(у діапазоні від 1 до 30)</span>
+  
+  <br>
+  <label for="maxValue_Label">Числа закінчиючи по:</label>
+  <Button id="decreaseIteration_Button" onclick="decreaseIteration()">-</Button>
   <input type="number" id="maxValue" name="maxValue" min="9" max="99">
+  <Button id="increaseIteration_Button" onclick="increaseIteration()">+</Button>
+  <span style="color: #999999;">(у діапазоні від 9 до 99)</span>
+  
   <br>
-  <br>
-  <label for="delaySecondsLabel">Затримка у секундах (між 1..9)....:</label>
+  <label for="delaySeconds_Label">Затримка у секундах.:</label>
+  <Button id="decreaseDelay_Button" onclick="decreaseDelay()">-</Button>
   <input type="number" id="delaySecondsValue" name="delaySecondsValue" min="1" max="9">
+  <Button id="increaseDelay_Button" onclick="increaseDelay()">+</Button>
+  <span style="color: #999999;">(у діапазоні від 1 до 9)</span>
   <br>
   <br>
   <br>
-  <button id="startGame" onclick="startGame()">Початок гри</button>
+  <Button id="startGame" onclick="startGame()">Початок гри</Button>
   
 
   <h1>Число...:</h1>
   <h1><label id="number"> 0 </label></h1>
   <br>
 
-  <label id="inputResultLabel" for="inputResultLabel">Ввести свій результат:</label>
+  <label id="inputResult_Label" for="inputResult_Label">Ввести свій результат:</label>
   
   <input type="number" id="myResultValue" name="myResultValue" min="1">
 
-  <button id="checkResultButton" onclick="checkResult()">Перевірити результат</button>
+  <Button id="checkResult_Button" onclick="checkResult()">Перевірити результат</Button>
   <br>
   <br>
   <h1><label id="resultOfGame"></label></h1>
